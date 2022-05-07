@@ -1,0 +1,222 @@
+    .margenmain {
+        margin-top: 7%;
+    }
+    /* Section 1 */
+    
+    .knowmad {
+        background-image: url(img/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        font-size: 1em;
+        height: 30em;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .knowmad p {
+        color: aliceblue;
+        margin-left: 2%;
+        margin-top: 15%;
+        background-color: black;
+        padding: 5%;
+        border-radius: 9px;
+    }
+    
+    .knowmad p .titulo2 {
+        font-size: x-large;
+    }
+    
+    .knowmad img {
+        width: 50%;
+        height: 40%;
+        border-top-left-radius: 56px;
+        border-bottom-left-radius: 10%;
+        margin-left: 5%;
+        margin-top: 15%;
+        filter: grayscale(80%);
+    }
+    /* Section 2 */
+    
+    #capacitacion {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 850px;
+        background-image: url(img/banner.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #capacitacion h3 {
+        margin: 10px auto 50px;
+        font-size: xx-large;
+        text-align: center;
+        color: aliceblue;
+        animation-duration: 3s;
+        animation-name: slidein;
+        animation-iteration-count: 3;
+        animation-direction: alternate;
+    }
+    
+    @keyframes slidein {
+        0% {
+            transform: scale(0.2);
+        }
+        85% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(0.2);
+        }
+    }
+    
+    #aplicacion {
+        height: 300px;
+        background-color: black;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #aplicacion .carruseltexto {
+        background-color: black;
+        font-size: 2rem;
+        color: aliceblue;
+    }
+    
+    footer {
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    footer img {
+        width: 10%;
+        border-radius: 9%;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .knowmad {
+            flex-direction: row;
+            height: 40rem;
+        }
+        .knowmad p,
+        .knowmad img {
+            margin-top: 0px;
+        }
+        #capacitacion h3 {
+            margin: 10px auto 50px;
+            font-size: 5rem;
+        }
+        #aplicacion {
+            height: 560px;
+            background-color: black;
+            color: black;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #aplicacion .carruseltexto {
+            display: none;
+        }
+    }
+    
+    @media only screen and (min-width: 1024px) {
+        .margenmain {
+            margin-top: 0%;
+        }
+        .knowmad {
+            flex-direction: row;
+            height: 40rem;
+        }
+        .knowmad p,
+        .knowmad img {
+            margin-top: 0px;
+        }
+        .knowmad p {
+            font-size: 2rem;
+        }
+        #capacitacion {
+            height: 40rem;
+        }
+        #capacitacion h3 {
+            animation-duration: 12s;
+            animation-name: slidein;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .margenmain p .titulo2 {
+            font-size: 3rem;
+        }
+        #aplicacion {
+            height: 750px;
+        }
+    }
+    
+    @media only screen and (min-width: 1440px) {
+        .margenmain {
+            margin-top: 0%;
+        }
+        .knowmad {
+            height: 70rem;
+        }
+        #capacitacion {
+            height: 70rem;
+        }
+        #aplicacion {
+            height: 1100px;
+        }
+        #capacitacion h3 {
+            animation-duration: 12s;
+            animation-name: slidein;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    }
+    
+    @media only screen and (min-width: 2560px) {
+        .margenmain {
+            margin-top: 0%;
+        }
+        .knowmad {
+            height: 130rem;
+        }
+        #capacitacion {
+            height: 120rem;
+        }
+        #aplicacion {
+            height: 2200px;
+        }
+        #capacitacion h3 {
+            margin: 0px auto 50px;
+            font-size: 8rem;
+            animation-duration: 12s;
+            animation-name: slidein;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    }
+    
+    @media only screen and (max-width: 425px) {
+        #aplicacion .carruseltexto {
+            background-color: black;
+            font-size: 0.5rem;
+            color: aliceblue;
+            margin-left: 35px;
+            margin-right: 35px;
+        }
+        #aplicacion {
+            height: 700px;
+        }
+    }
